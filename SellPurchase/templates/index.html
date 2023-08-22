@@ -1,0 +1,111 @@
+{% extends 'navbar.html' %}
+{% block main %}
+{% load static %}
+
+<!-- Carousel Start -->
+<div class="carousel">
+    <div class="container-fluid">
+        <div class="owl-carousel">
+            <div class="carousel-item">
+                <div class="carousel-img">
+                    <img src="{% static 'img/carousel-1.jpg' %}" alt="Image" style="height: 600px;">
+                </div>
+                <div class="carousel-text">
+                    <h1>Don't Waste Food,give it to other</h1>
+                    <p>
+                        Don't waste food because so many needy hands are waiting for it and sleeping with empty stomachs.
+                    </p>
+                    <div class="carousel-btn">
+                        <a class="btn btn-custom" href="{% url 'addproduct' %}">Donate ( दान )</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img">
+                    <img src="{% static 'img/carousel-2.jpg' %}" alt="Image" style="height: 600px;">
+                </div>
+                <div class="carousel-text">
+                    <h1>Help the Hungry People</h1>
+                    <p>
+                        There are poor and hungry people all around us. When you see the level and depth of suffering that's going on, then you have no reaction other than to help.
+                    </p>
+                    <div class="carousel-btn">
+                        <a class="btn btn-custom" href="{% url 'student_login' %}">Donate ( दान )</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img">
+                    <img src="{% static 'img/carousel-3.jpg' %}" alt="Image" style="height: 600px;">
+                </div>
+                <div class="carousel-text">
+                    <h1>Bringing smiles to millions hunger people</h1>
+                    <p>
+                        We know that a peaceful world cannot exist for long with one-third being rich and two-thirds hungry.
+                    </p>
+                    <div class="carousel-btn">
+                        <a class="btn btn-custom" href="{% url 'student_login' %}">Donate ( दान )</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Carousel End -->
+
+
+<!--about start-->
+<div class="about">
+    <div class="container">
+        <div class="row align-items-center">
+            {% comment %} <div class="col-lg-6">
+                <div class="about-img" data-parallax="scroll" data-image-src="{% static 'img/about.jpg' %}"></div>
+            </div> {% endcomment %}
+            <div class="col-lg-6">
+                <div class="section-header">
+                    <p>Learn About Us</p>
+                    <h2>All About Food Wastage</h2>
+                </div>
+                <div class="about-tab">
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#tab-content-1">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#tab-content-2">Mission</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#tab-content-3">Vision</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="tab-content-1" class="container tab-pane active">
+                            The problem of food waste is a relatively modern one. India is an ancient civilisation and
+                            we have been prudent about food for millennia. Our parents and grandparents, too, once
+                            approached food and cooking with the same prudence. Yet, somewhere along the way, we lost
+                            sight of this “waste not, want not” mentality.
+                        </div>
+                        <div id="tab-content-2" class="container tab-pane fade">
+                            There is also a significant amount of food waste generated in our homes. As per the Food
+                            Waste Index Report 2021, a staggering 50 kg of food is thrown away per person every year in
+                            Indian homes. This excess food waste usually ends up in landfills, creating potent
+                            greenhouse gases which have dire environmental implications. Meanwhile, we continue to be
+                            greenwashed into amassing more “organic” and “sustainable” products than we really need.
+                        </div>
+                        <div id="tab-content-3" class="container tab-pane fade">
+                            This has been a problem for decades, and is worsening with time. It was only when the
+                            COVID-19 pandemic came along in 2020 that many of us began taking note. Affluent Indians
+                            were suddenly inconvenienced by things otherwise taken for granted, like procuring groceries
+                            or worrying about how long their supplies would last. We came to realise that the food we
+                            eat goes far beyond the few bites it takes for us to finish it.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--about end-->
+
+{% endblock %}
